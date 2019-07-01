@@ -5,7 +5,6 @@ import com.jclarity.region.fx.FrameCounter;
 import com.jclarity.region.fx.VideoControls;
 import com.jclarity.region.fx.G1GCHeapView;
 import com.jclarity.region.model.JavaVirtualMachine;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
 import javafx.application.Platform;

@@ -4,9 +4,10 @@ export FLAGS="-Xloggc:gc.log -XX:+PrintGCDetails -XX:+PrintGCApplicationStoppedT
 export PROFILE="-XX:+UnlockCommericalFeatures -XX:+FlightRecorder"
 export MAIN=com.jclarity.region.G1GCHeapAnimation
 #export CLASS_PATH=out/production/regions
-export CLASS_PATH=build/classes/main
+export CLASS_PATH=build/libs/regions.jar
 
+[ -r testdata.log ] || gunzip -k testdata.log.gz
 
-export ARGS=testdata.log
+ARGS=testdata.log
 
 java $FLAGS -classpath $CLASS_PATH $MAIN $ARGS
